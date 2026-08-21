@@ -422,7 +422,7 @@ section{
     transition:.3s;
     display:flex;
     flex-direction:column;
-    justify-content:between;
+    justify-content:space-between;
 }
 
 .skill-card:hover{
@@ -447,30 +447,21 @@ section{
 .skill-mint{border-top:4px solid #20b8b0}
 .skill-dark{border-top:4px solid #075e5a}
 
-/* UPLOAD BUTTON STYLING */
-.upload-btn-container {
-    margin-top: auto;
-}
-
-.upload-btn-container input[type="file"] {
-    display: none;
-}
-
-.custom-upload-btn {
+/* DOWNLOAD BUTTON STYLE */
+.download-link {
     display: block;
     text-align: center;
     background: linear-gradient(135deg, var(--teal), var(--teal2));
-    color: white;
+    color: white !important;
     padding: 8px 12px;
     font-size: 13px;
     font-weight: bold;
     border-radius: 8px;
-    cursor: pointer;
+    margin-top: auto;
     transition: 0.2s;
-    box-shadow: 0 4px 10px rgba(0,143,149,.15);
 }
 
-.custom-upload-btn:hover {
+.download-link:hover {
     transform: translateY(-2px);
     background: linear-gradient(135deg, var(--green), var(--green2));
 }
@@ -569,3 +560,11 @@ section{
                 <a href="#story">My Story</a>
                 <a href="#knowledge">Knowledge</a>
                 <a href="#roadmaps">Learning Roadmaps</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <section class="hero">
