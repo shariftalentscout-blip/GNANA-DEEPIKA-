@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Gnana Deepika | Knowledge, Skills, Career & Growth</title>
 
-<meta name="description"
-content="Gnana Deepika by Shaik Sharif — knowledge, practical skills, career roadmaps, real-life learning, projects and career guidance.">
+<meta name="description" content="Gnana Deepika by Shaik Sharif — knowledge, practical skills, career roadmaps, real-life learning, projects, software ideas and career guidance.">
 
 <meta name="author" content="Shaik Sharif">
+<meta name="theme-color" content="#075e5a">
 
 <link rel="icon" href="./gnana-deepika-logo.png">
 
@@ -25,6 +24,8 @@ content="Gnana Deepika by Shaik Sharif — knowledge, practical skills, career r
 
     --teal:#008f95;
     --teal2:#20b8b0;
+
+    --gold:#c9a43b;
 
     --white:#ffffff;
     --soft:#f1faf8;
@@ -62,23 +63,19 @@ a{
     margin:auto;
 }
 
-
-/* ================= HEADER ================= */
+/* HEADER */
 
 header{
     position:sticky;
     top:0;
     z-index:1000;
-
     background:rgba(255,255,255,.96);
     backdrop-filter:blur(16px);
-
     border-bottom:1px solid var(--border);
 }
 
 nav{
     min-height:80px;
-
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -93,10 +90,8 @@ nav{
 .logo{
     width:54px;
     height:54px;
-
     border-radius:50%;
     overflow:hidden;
-
     box-shadow:0 0 25px rgba(8,127,110,.22);
 }
 
@@ -108,16 +103,13 @@ nav{
 
 .brand-text strong{
     display:block;
-
     color:var(--dark);
-
     font-size:16px;
     letter-spacing:1.5px;
 }
 
 .brand-text small{
     color:var(--green);
-
     font-size:10px;
     letter-spacing:2px;
 }
@@ -125,7 +117,6 @@ nav{
 .nav-links{
     display:flex;
     gap:24px;
-
     font-size:14px;
     font-weight:700;
 }
@@ -138,19 +129,15 @@ nav{
     color:var(--teal);
 }
 
-
-/* ================= HERO ================= */
+/* HERO */
 
 .hero{
     min-height:calc(100vh - 80px);
-
     display:flex;
     align-items:center;
     justify-content:center;
-
     text-align:center;
     color:white;
-
     position:relative;
     overflow:hidden;
 
@@ -175,96 +162,66 @@ nav{
 
 .hero:before{
     content:"";
-
     position:absolute;
-
     width:650px;
     height:650px;
-
     border-radius:50%;
-
     border:1px solid rgba(255,255,255,.13);
-
     animation:rotate 25s linear infinite;
 }
 
 .hero:after{
     content:"";
-
     position:absolute;
-
     width:300px;
     height:300px;
-
     border-radius:50%;
-
     background:rgba(32,184,176,.14);
-
     filter:blur(75px);
-
     animation:glow 5s ease-in-out infinite;
 }
 
 @keyframes rotate{
-
-    from{
-        transform:rotate(0);
-    }
-
-    to{
-        transform:rotate(360deg);
-    }
-
+    from{transform:rotate(0)}
+    to{transform:rotate(360deg)}
 }
 
 @keyframes glow{
-
     0%,100%{
         transform:scale(.8);
         opacity:.5;
     }
-
     50%{
         transform:scale(1.2);
         opacity:1;
     }
-
 }
 
 .hero-content{
     position:relative;
     z-index:2;
-
     max-width:900px;
-
     animation:fadeUp 1.1s ease;
 }
 
 @keyframes fadeUp{
-
     from{
         opacity:0;
         transform:translateY(30px);
     }
-
     to{
         opacity:1;
         transform:translateY(0);
     }
-
 }
 
 .hero-logo{
     width:105px;
     height:105px;
-
     border-radius:50%;
     overflow:hidden;
-
     margin:0 auto 25px;
-
     border:2px solid rgba(255,255,255,.55);
-
     box-shadow:
         0 0 30px rgba(32,184,176,.35),
         0 0 70px rgba(8,127,110,.20);
@@ -278,56 +235,38 @@ nav{
 
 .eyebrow{
     color:#aaf2e9;
-
     text-transform:uppercase;
-
     letter-spacing:4px;
-
     font-size:12px;
-
     font-weight:800;
 }
 
 .hero h1{
     font-size:clamp(45px,7vw,82px);
-
     line-height:1.03;
-
     margin:18px 0;
 }
 
 .hero h1 span{
     color:#b9fff5;
-
-    text-shadow:
-        0 0 25px rgba(32,184,176,.25);
+    text-shadow:0 0 25px rgba(32,184,176,.25);
 }
 
 .hero-description{
     max-width:800px;
-
     margin:auto;
-
     font-size:19px;
-
     color:#dff7f3;
 }
 
 .hero-motto{
     margin:28px auto;
-
     max-width:720px;
-
     padding:18px 25px;
-
     border:1px solid rgba(255,255,255,.25);
-
     background:rgba(255,255,255,.07);
-
     border-radius:18px;
-
     font-size:18px;
-
     font-weight:800;
 }
 
@@ -337,25 +276,17 @@ nav{
 
 .buttons{
     display:flex;
-
     justify-content:center;
-
     flex-wrap:wrap;
-
     gap:15px;
-
     margin-top:28px;
 }
 
 .btn{
     display:inline-block;
-
     padding:14px 25px;
-
     border-radius:13px;
-
     font-weight:800;
-
     transition:.3s;
 }
 
@@ -365,42 +296,23 @@ nav{
 
 .btn-green{
     color:white;
-
-    background:
-        linear-gradient(
-            135deg,
-            var(--green),
-            var(--green2)
-        );
-
-    box-shadow:
-        0 0 30px rgba(22,160,133,.25);
+    background:linear-gradient(135deg,var(--green),var(--green2));
+    box-shadow:0 0 30px rgba(22,160,133,.25);
 }
 
 .btn-teal{
     color:white;
-
-    background:
-        linear-gradient(
-            135deg,
-            var(--teal),
-            var(--teal2)
-        );
-
-    box-shadow:
-        0 0 30px rgba(32,184,176,.22);
+    background:linear-gradient(135deg,var(--teal),var(--teal2));
+    box-shadow:0 0 30px rgba(32,184,176,.22);
 }
 
 .btn-outline{
     color:white;
-
     border:1px solid rgba(255,255,255,.35);
-
     background:rgba(255,255,255,.06);
 }
 
-
-/* ================= SECTIONS ================= */
+/* SECTIONS */
 
 section{
     padding:90px 0;
@@ -411,29 +323,19 @@ section{
 }
 
 .cream{
-    background:
-        linear-gradient(
-            135deg,
-            #f1faf8,
-            #f8fcfa
-        );
+    background:linear-gradient(135deg,#f1faf8,#f8fcfa);
 }
 
 .section-title{
     max-width:800px;
-
     margin:0 auto 50px;
-
     text-align:center;
 }
 
 .section-title h2{
     color:var(--dark);
-
     font-size:clamp(32px,5vw,50px);
-
     line-height:1.15;
-
     margin:10px 0;
 }
 
@@ -441,59 +343,120 @@ section{
     color:var(--muted);
 }
 
+/* CARDS */
 
-/* ================= MY STORY ================= */
-
-.story-layout{
-
+.grid{
     display:grid;
-
-    grid-template-columns:
-        1.15fr
-        .85fr;
-
-    gap:35px;
-
-    align-items:center;
-
-    max-width:1100px;
-
-    margin:auto;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
 }
 
-.story{
-
+.card{
+    position:relative;
+    overflow:hidden;
     background:white;
-
-    padding:38px;
-
-    border-radius:25px;
-
     border:1px solid var(--border);
+    border-radius:23px;
+    padding:28px;
+    box-shadow:var(--shadow);
+    transition:.35s;
+}
 
+.card:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:3px;
+    background:linear-gradient(
+        90deg,
+        var(--green),
+        var(--teal),
+        var(--green2)
+    );
+    transform:scaleX(0);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:
+        0 28px 70px rgba(0,105,95,.14),
+        0 0 30px rgba(32,184,176,.08);
+}
+
+.card:hover:before{
+    transform:scaleX(1);
+}
+
+.icon{
+    font-size:35px;
+    margin-bottom:10px;
+}
+
+.card h3{
+    color:var(--dark);
+    margin-bottom:8px;
+    font-size:20px;
+}
+
+.card p{
+    color:var(--muted);
+}
+
+/* SKILLS */
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.skill-card{
+    padding:23px;
+    background:white;
+    border:1px solid var(--border);
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,105,95,.07);
+    transition:.3s;
+}
+
+.skill-card:hover{
+    transform:translateY(-7px);
+    box-shadow:0 20px 45px rgba(0,105,95,.13);
+}
+
+.skill-card h3{
+    color:var(--dark);
+    font-size:17px;
+    margin-bottom:6px;
+}
+
+.skill-card p{
+    color:var(--muted);
+    font-size:14px;
+}
+
+.skill-green{border-top:4px solid #087f6e}
+.skill-teal{border-top:4px solid #008f95}
+.skill-mint{border-top:4px solid #20b8b0}
+.skill-dark{border-top:4px solid #075e5a}
+
+/* STORY */
+
+.story{
+    max-width:900px;
+    margin:auto;
+    padding:38px;
+    background:white;
+    border-radius:25px;
+    border:1px solid var(--border);
     box-shadow:var(--shadow);
 }
 
-.story h2{
-
-    color:var(--dark);
-
-    font-size:
-        clamp(
-            30px,
-            4vw,
-            45px
-        );
-
-    margin:
-        10px 0
-        20px;
-}
-
 .story p{
-
     color:var(--muted);
-
     margin-bottom:17px;
 }
 
@@ -501,518 +464,182 @@ section{
     color:var(--dark);
 }
 
+/* ROADMAP */
 
-/* PERSONAL POSTER */
-
-.story-poster{
-
-    border-radius:25px;
-
-    overflow:hidden;
-
-    border:2px solid
-        rgba(8,127,110,.25);
-
-    background:#033b39;
-
-    box-shadow:
-
-        0 25px 60px
-        rgba(0,105,95,.18),
-
-        0 0 30px
-        rgba(32,184,176,.10);
-
-    transition:.4s;
-}
-
-.story-poster:hover{
-
-    transform:
-        translateY(-7px);
-
-    box-shadow:
-
-        0 35px 75px
-        rgba(0,105,95,.23),
-
-        0 0 40px
-        rgba(32,184,176,.15);
-}
-
-.story-poster img{
-
-    display:block;
-
-    width:100%;
-
-    height:auto;
-
-    transition:.5s;
-}
-
-.story-poster:hover img{
-
-    transform:scale(1.025);
-}
-
-
-/* ================= KNOWLEDGE ================= */
-
-.skills-grid{
-
+.roadmap{
     display:grid;
-
-    grid-template-columns:
-        repeat(4,1fr);
-
-    gap:18px;
-}
-
-.skill-card{
-
-    padding:23px;
-
-    background:white;
-
-    border:1px solid var(--border);
-
-    border-radius:20px;
-
-    box-shadow:
-        0 10px 30px
-        rgba(0,105,95,.07);
-
-    transition:.3s;
-}
-
-.skill-card:hover{
-
-    transform:
-        translateY(-7px);
-
-    box-shadow:
-        0 20px 45px
-        rgba(0,105,95,.13);
-}
-
-.skill-card h3{
-
-    color:var(--dark);
-
-    font-size:17px;
-
-    margin-bottom:6px;
-}
-
-.skill-card p{
-
-    color:var(--muted);
-
-    font-size:14px;
-}
-
-.skill-green{
-    border-top:4px solid #087f6e;
-}
-
-.skill-teal{
-    border-top:4px solid #008f95;
-}
-
-.skill-mint{
-    border-top:4px solid #20b8b0;
-}
-
-.skill-dark{
-    border-top:4px solid #075e5a;
-}
-
-.icon{
-
-    font-size:35px;
-
-    margin-bottom:10px;
-}
-
-
-/* ================= REAL LIFE LEARNING ================= */
-
-.grid{
-
-    display:grid;
-
-    grid-template-columns:
-        repeat(3,1fr);
-
+    grid-template-columns:repeat(3,1fr);
     gap:22px;
 }
 
-.card{
-
-    position:relative;
-
-    overflow:hidden;
-
-    background:white;
-
-    border:1px solid var(--border);
-
+.roadmap-card{
+    padding:30px;
     border-radius:23px;
-
-    padding:28px;
-
+    background:white;
+    border:1px solid var(--border);
     box-shadow:var(--shadow);
-
     transition:.35s;
 }
 
-.card:before{
-
-    content:"";
-
-    position:absolute;
-
-    top:0;
-    left:0;
-
-    width:100%;
-    height:3px;
-
-    background:
-        linear-gradient(
-            90deg,
-            var(--green),
-            var(--teal),
-            var(--green2)
-        );
-
-    transform:
-        scaleX(0);
-
-    transition:.4s;
+.roadmap-card:hover{
+    transform:translateY(-8px);
 }
 
-.card:hover{
-
-    transform:
-        translateY(-8px);
-
-    box-shadow:
-        0 28px 70px
-        rgba(0,105,95,.14);
-}
-
-.card:hover:before{
-
-    transform:
-        scaleX(1);
-}
-
-.card h3{
-
+.roadmap-card h3{
     color:var(--dark);
-
-    margin-bottom:8px;
-
-    font-size:20px;
+    margin-bottom:12px;
 }
 
-.card p{
-
+.roadmap-card ul{
+    padding-left:20px;
     color:var(--muted);
 }
 
+.roadmap-card li{
+    margin-bottom:7px;
+}
 
-/* ================= QUOTE ================= */
+/* QUOTE */
 
 .quote-box{
-
     max-width:1000px;
-
     margin:auto;
-
     padding:65px 35px;
-
     border-radius:30px;
-
     text-align:center;
-
     color:white;
 
     background:
-
         radial-gradient(
             circle at 50% 0%,
             rgba(32,184,176,.25),
             transparent 40%
         ),
-
         linear-gradient(
             135deg,
             #033b39,
             #075e5a
         );
 
-    box-shadow:
-        0 30px 80px
-        rgba(0,105,95,.20);
+    box-shadow:0 30px 80px rgba(0,105,95,.20);
 }
 
 .quote-box h2{
-
     color:#b9fff5;
-
-    font-size:
-        clamp(
-            28px,
-            5vw,
-            45px
-        );
-
+    font-size:clamp(28px,5vw,45px);
     margin-bottom:18px;
 }
 
 .quote-box p{
-
     max-width:800px;
-
     margin:auto;
-
     color:#dcefeb;
-
     font-size:18px;
 }
 
-
-/* ================= ROADMAP ================= */
-
-.roadmap{
-
-    display:grid;
-
-    grid-template-columns:
-        repeat(3,1fr);
-
-    gap:22px;
-}
-
-.roadmap-card{
-
-    padding:30px;
-
-    border-radius:23px;
-
-    background:white;
-
-    border:1px solid var(--border);
-
-    box-shadow:var(--shadow);
-
-    transition:.35s;
-}
-
-.roadmap-card:hover{
-
-    transform:
-        translateY(-8px);
-}
-
-.roadmap-card h3{
-
-    color:var(--dark);
-
-    margin-bottom:12px;
-}
-
-.roadmap-card ul{
-
-    padding-left:20px;
-
-    color:var(--muted);
-}
-
-.roadmap-card li{
-
-    margin-bottom:7px;
-}
-
-
-/* ================= PROJECTS ================= */
+/* PROJECTS */
 
 .projects{
-
     display:grid;
-
-    grid-template-columns:
-        repeat(2,1fr);
-
+    grid-template-columns:repeat(2,1fr);
     gap:22px;
 }
 
 .project{
-
     padding:30px;
-
     border-radius:23px;
-
     background:white;
-
     border:1px solid var(--border);
-
     box-shadow:var(--shadow);
-
     transition:.35s;
 }
 
 .project:hover{
-
-    transform:
-        translateY(-7px);
+    transform:translateY(-7px);
 }
 
 .project h3{
-
     color:var(--dark);
-
     margin-bottom:8px;
 }
 
 .project p{
-
     color:var(--muted);
 }
 
-
-/* ================= CONTACT ================= */
+/* CONTACT */
 
 .contact{
-
     text-align:center;
 }
 
 .contact-box{
-
     max-width:900px;
-
     margin:auto;
-
     padding:65px 30px;
-
     border-radius:30px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #edf9f7,
-            #f8fcfa
-        );
-
+    background:linear-gradient(135deg,#edf9f7,#f8fcfa);
     border:1px solid var(--border);
-
     box-shadow:var(--shadow);
 }
 
 .contact-box h2{
-
     color:var(--dark);
-
-    font-size:
-        clamp(
-            32px,
-            5vw,
-            53px
-        );
-
+    font-size:clamp(32px,5vw,53px);
     margin:10px 0;
 }
 
 .contact-box p{
-
     color:var(--muted);
-
     max-width:700px;
-
     margin:auto;
 }
 
 .contact-buttons{
-
     display:flex;
-
     justify-content:center;
-
     flex-wrap:wrap;
-
     gap:15px;
-
     margin-top:28px;
 }
 
-
-/* ================= FOOTER ================= */
+/* FOOTER */
 
 footer{
-
     background:#033b39;
-
     color:white;
-
     text-align:center;
-
     padding:50px 0;
 }
 
 .footer-logo{
-
     width:80px;
-
     height:80px;
-
     border-radius:50%;
-
     overflow:hidden;
-
-    margin:
-        0 auto
-        15px;
-
-    border:
-        2px solid
-        rgba(32,184,176,.55);
-
-    box-shadow:
-        0 0 25px
-        rgba(32,184,176,.20);
+    margin:0 auto 15px;
+    border:2px solid rgba(32,184,176,.55);
+    box-shadow:0 0 25px rgba(32,184,176,.20);
 }
 
 .footer-logo img{
-
     width:100%;
-
     height:100%;
-
     object-fit:cover;
 }
 
 footer strong{
-
     display:block;
-
     color:#b9fff5;
-
     font-size:18px;
-
     letter-spacing:1px;
 }
 
 footer small{
-
     color:#b9d9d5;
 }
 
-
-/* ================= MOBILE ================= */
+/* MOBILE */
 
 @media(max-width:950px){
 
@@ -1021,28 +648,19 @@ footer small{
     }
 
     .grid{
-        grid-template-columns:
-            repeat(2,1fr);
+        grid-template-columns:repeat(2,1fr);
     }
 
     .skills-grid{
-        grid-template-columns:
-            repeat(2,1fr);
+        grid-template-columns:repeat(2,1fr);
     }
 
     .roadmap{
-        grid-template-columns:
-            repeat(2,1fr);
+        grid-template-columns:repeat(2,1fr);
     }
-
-    .story-layout{
-        grid-template-columns:
-            1fr 1fr;
-    }
-
 }
 
-@media(max-width:700px){
+@media(max-width:600px){
 
     section{
         padding:70px 0;
@@ -1051,9 +669,7 @@ footer small{
     .grid,
     .skills-grid,
     .roadmap,
-    .projects,
-    .story-layout{
-
+    .projects{
         grid-template-columns:1fr;
     }
 
@@ -1070,39 +686,23 @@ footer small{
     }
 
     .hero-logo{
-
         width:85px;
         height:85px;
     }
 
     .story{
-
         padding:25px;
     }
-
-    .story-poster{
-
-        max-width:500px;
-
-        margin:auto;
-    }
-
 }
 
 </style>
-
 </head>
-
 
 <body>
 
-
-<!-- ==================================================
-                     HEADER
-================================================== -->
+<!-- HEADER -->
 
 <header>
-
 <div class="container">
 
 <nav>
@@ -1110,67 +710,32 @@ footer small{
 <a href="#" class="brand">
 
 <div class="logo">
-
-<img
-src="./gnana-deepika-logo.png"
-alt="Gnana Deepika Logo">
-
+<img src="./gnana-deepika-logo.png" alt="Gnana Deepika Logo">
 </div>
 
 <div class="brand-text">
-
-<strong>
-GNANA DEEPIKA
-</strong>
-
-<small>
-KNOWLEDGE • SKILLS • GROWTH
-</small>
-
+<strong>GNANA DEEPIKA</strong>
+<small>KNOWLEDGE • SKILLS • GROWTH</small>
 </div>
 
 </a>
 
-
 <div class="nav-links">
-
-<a href="#about">
-My Story
-</a>
-
-<a href="#skills">
-Knowledge
-</a>
-
-<a href="#learning">
-Learning
-</a>
-
-<a href="#roadmaps">
-Roadmaps
-</a>
-
-<a href="#projects">
-Projects
-</a>
-
-<a href="#contact">
-Contact
-</a>
-
+<a href="#about">My Story</a>
+<a href="#skills">Knowledge</a>
+<a href="#learning">Learning</a>
+<a href="#roadmaps">Roadmaps</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
 </div>
 
 </nav>
 
 </div>
-
 </header>
 
 
-
-<!-- ==================================================
-                       HERO
-================================================== -->
+<!-- HERO -->
 
 <section class="hero">
 
@@ -1178,1379 +743,561 @@ Contact
 
 <div class="hero-content">
 
-
 <div class="hero-logo">
-
-<img
-src="./gnana-deepika-logo.png"
-alt="Gnana Deepika Logo">
-
+<img src="./gnana-deepika-logo.png" alt="Gnana Deepika Logo">
 </div>
 
-
-<div class="eyebrow">
-
-WELCOME TO
-
-</div>
-
+<div class="eyebrow">WELCOME TO</div>
 
 <h1>
-
 Welcome to
-
-<span>
-Gnana Deepika
-</span>
-
+<span>Gnana Deepika</span>
 </h1>
 
-
 <p class="hero-description">
-
 A platform where knowledge becomes skill,
 skills become confidence,
 and confidence becomes progress.
-
 </p>
 
-
 <div class="hero-motto">
-
-<span class="motto">
-బోధించు
-</span>
-
+<span class="motto">బోధించు</span>
 &nbsp; • &nbsp;
-
-<span class="motto">
-నేర్చుకో
-</span>
-
+<span class="motto">సమీకరించు</span>
 &nbsp; • &nbsp;
-
-<span class="motto">
-పంచుకో
-</span>
-
+<span class="motto">పోరాడు</span>
 </div>
-
 
 <div class="buttons">
 
-<a
-href="#skills"
-class="btn btn-green">
-
+<a href="#skills" class="btn btn-green">
 📚 Explore Knowledge
-
 </a>
 
-
-<a
-href="#about"
-class="btn btn-teal">
-
+<a href="#about" class="btn btn-teal">
 👤 My Story
-
 </a>
 
 </div>
 
-
 </div>
-
 </div>
-
 </section>
 
 
+<!-- MY STORY -->
 
-<!-- ==================================================
-                    MY STORY
-================================================== -->
-
-<section
-id="about"
-class="cream">
+<section id="about" class="cream">
 
 <div class="container">
 
-
 <div class="section-title">
 
-<div class="eyebrow">
+<div class="eyebrow">MY STORY</div>
 
-MY STORY
-
-</div>
-
-<h2>
-
-Learning Never Stops.
-
-</h2>
+<h2>Learning Never Stops.</h2>
 
 <p>
-
-From learning through experience
-to sharing knowledge with others.
-
+From learning through experience to sharing knowledge with others.
 </p>
 
 </div>
-
-
-
-<div class="story-layout">
-
-
-<!-- STORY CONTENT -->
 
 <div class="story">
 
-
-<div class="eyebrow">
-
-SHAIK SHARIF
-
-</div>
-
-
-<h2>
-
-My Journey.
-
-</h2>
-
-
 <p>
-
-My name is
-<strong>Shaik Sharif</strong>.
-I am from
-<strong>Bhimavaram</strong>
-and I completed my
-<strong>MCA</strong>.
-
+My name is <strong>Shaik Sharif</strong>.
+I am from <strong>Bhimavaram</strong>
+and I completed my <strong>MCA</strong>.
 </p>
 
-
 <p>
-
 After completing my education,
 I worked in different environments,
-including the
-<strong>banking sector</strong>
-and
-<strong>Flipkart</strong>.
-
+including the <strong>banking sector</strong>
+and <strong>Flipkart</strong>.
 </p>
 
-
 <p>
-
-While working, I realized that
-education should not stop with
-completing a degree.
-
-</p>
-
-
-<p>
-
+While working, I realized that education
+should not stop with completing a degree.
 I started continuously learning
-<strong>skills, technologies,
-tools and practical concepts</strong>
+<strong>skills, technologies, tools and practical concepts</strong>
 to move forward.
-
 </p>
 
-
 <p>
-
-That learning journey eventually
-led me to start
-<strong>SS CAREER HUB</strong>.
-
+That learning journey eventually led me
+to start <strong>SS CAREER HUB</strong>.
 </p>
 
-
 <p>
-
 I divided my work into three major areas:
-
-<strong>
-Job Seekers,
-Schools
-and
-Small Businesses.
-</strong>
-
+<strong>Job Seekers, Schools and Small Businesses.</strong>
+The objective is to create practical support,
+projects and digital solutions for these communities.
 </p>
 
-
 <p>
-
-The objective is to create practical
-support, projects and digital solutions
-for these communities.
-
-</p>
-
-
-<p>
-
 Whatever I have learned,
-I wanted to share with others.
-
-<strong>
-Gnana Deepika
-</strong>
-
-is my attempt to bring that knowledge,
-experience and learning mindset
-into one platform.
-
+I wanted to share it with others.
+<strong>Gnana Deepika</strong> is my attempt
+to bring that knowledge, experience and
+learning mindset into one platform.
 </p>
 
-
-<p>
-
-<strong>
-"Learn it. Apply it. Improve it.
-Then share it."
-</strong>
-
-</p>
-
-
-</div>
-
-
-
-<!-- PERSONAL POSTER -->
-
-<div class="story-poster">
-
-<img
-src="./my logo.png"
-alt="Shaik Sharif - The Unyielding Journey">
-
-</div>
-
-
 </div>
 
 </div>
-
 </section>
 
 
-
-<!-- ==================================================
-                  KNOWLEDGE HUB
-================================================== -->
+<!-- KNOWLEDGE -->
 
 <section id="skills">
 
 <div class="container">
 
-
 <div class="section-title">
 
-<div class="eyebrow">
+<div class="eyebrow">KNOWLEDGE HUB</div>
 
-KNOWLEDGE HUB
-
-</div>
-
-<h2>
-
-Skills & Topics
-
-</h2>
+<h2>Skills & Topics</h2>
 
 <p>
-
 Learn concepts, understand practical applications
 and build confidence step by step.
-
 </p>
 
 </div>
-
-
 
 <div class="skills-grid">
 
-
 <div class="skill-card skill-green">
-
-<div class="icon">
-💻
+<div class="icon">💻</div>
+<h3>Computer Basics</h3>
+<p>Fundamental computer concepts, digital literacy and everyday productivity.</p>
 </div>
-
-<h3>
-Computer Basics
-</h3>
-
-<p>
-Fundamental computer concepts,
-digital literacy and everyday productivity.
-</p>
-
-</div>
-
-
 
 <div class="skill-card skill-teal">
-
-<div class="icon">
-📊
+<div class="icon">📊</div>
+<h3>MS Excel Basic & Advanced</h3>
+<p>Formulas, functions, data handling, automation and real-life Excel solutions.</p>
 </div>
-
-<h3>
-MS Excel Basic & Advanced
-</h3>
-
-<p>
-Formulas, functions, data handling,
-automation and real-life Excel solutions.
-</p>
-
-</div>
-
-
 
 <div class="skill-card skill-mint">
-
-<div class="icon">
-⚙️
+<div class="icon">⚙️</div>
+<h3>VBA Macros</h3>
+<p>Basic to advanced Excel automation and practical macro concepts.</p>
 </div>
-
-<h3>
-VBA Macros
-</h3>
-
-<p>
-Basic to advanced Excel automation
-and practical macro concepts.
-</p>
-
-</div>
-
-
 
 <div class="skill-card skill-dark">
-
-<div class="icon">
-🧮
+<div class="icon">🧮</div>
+<h3>Aptitude</h3>
+<p>Numerical ability, problem solving and competitive-exam thinking.</p>
 </div>
-
-<h3>
-Aptitude
-</h3>
-
-<p>
-Numerical ability, problem solving
-and competitive-exam thinking.
-</p>
-
-</div>
-
-
 
 <div class="skill-card skill-green">
-
-<div class="icon">
-🧠
+<div class="icon">🧠</div>
+<h3>Reasoning</h3>
+<p>Logical reasoning, analytical thinking and systematic problem solving.</p>
 </div>
-
-<h3>
-Reasoning
-</h3>
-
-<p>
-Logical reasoning, analytical thinking
-and systematic problem solving.
-</p>
-
-</div>
-
-
 
 <div class="skill-card skill-teal">
-
-<div class="icon">
-📖
+<div class="icon">📖</div>
+<h3>English Grammar</h3>
+<p>Grammar fundamentals, communication and professional English.</p>
 </div>
-
-<h3>
-English Grammar
-</h3>
-
-<p>
-Grammar fundamentals, communication
-and professional English.
-</p>
-
-</div>
-
-
 
 <div class="skill-card skill-mint">
-
-<div class="icon">
-🗄️
+<div class="icon">🗄️</div>
+<h3>SQL</h3>
+<p>Queries, databases, data retrieval and practical SQL thinking.</p>
 </div>
-
-<h3>
-SQL
-</h3>
-
-<p>
-Queries, databases, data retrieval
-and practical SQL thinking.
-</p>
-
-</div>
-
-
 
 <div class="skill-card skill-dark">
-
-<div class="icon">
-🐍
+<div class="icon">🐍</div>
+<h3>Python</h3>
+<p>Programming fundamentals, logic building and practical coding.</p>
 </div>
-
-<h3>
-Python
-</h3>
-
-<p>
-Programming fundamentals,
-logic building and practical coding.
-</p>
-
-</div>
-
-
 
 <div class="skill-card skill-green">
-
-<div class="icon">
-💻
+<div class="icon">💻</div>
+<h3>C & C++</h3>
+<p>Programming concepts, logic building and problem solving.</p>
 </div>
-
-<h3>
-C & C++
-</h3>
-
-<p>
-Programming concepts,
-logic building and problem solving.
-</p>
-
-</div>
-
-
 
 <div class="skill-card skill-teal">
-
-<div class="icon">
-🧩
+<div class="icon">🧩</div>
+<h3>DSA & Data Structures</h3>
+<p>Algorithms, data structures and coding problem solving.</p>
 </div>
-
-<h3>
-DSA & Data Structures
-</h3>
-
-<p>
-Algorithms, data structures
-and coding problem solving.
-</p>
-
-</div>
-
-
 
 <div class="skill-card skill-mint">
-
-<div class="icon">
-📈
+<div class="icon">📈</div>
+<h3>Data Analytics</h3>
+<p>Data understanding, analysis mindset and business insights.</p>
 </div>
-
-<h3>
-Data Analytics
-</h3>
-
-<p>
-Data understanding, analysis mindset
-and business insights.
-</p>
-
-</div>
-
-
 
 <div class="skill-card skill-dark">
-
-<div class="icon">
-🔎
+<div class="icon">🔎</div>
+<h3>SEO</h3>
+<p>Search optimization, content strategy and ranking fundamentals.</p>
 </div>
-
-<h3>
-SEO
-</h3>
-
-<p>
-Search optimization, content strategy
-and ranking fundamentals.
-</p>
-
-</div>
-
-
 
 <div class="skill-card skill-green">
-
-<div class="icon">
-🎤
+<div class="icon">🎤</div>
+<h3>Interview Guidance</h3>
+<p>Interview preparation, HR questions and professional communication.</p>
 </div>
-
-<h3>
-Interview Guidance
-</h3>
-
-<p>
-Interview preparation,
-HR questions and professional communication.
-</p>
-
-</div>
-
-
 
 <div class="skill-card skill-teal">
-
-<div class="icon">
-📄
+<div class="icon">📄</div>
+<h3>Resume Writing</h3>
+<p>Resume structure, presentation and job-focused profile building.</p>
 </div>
-
-<h3>
-Resume Writing
-</h3>
-
-<p>
-Resume structure, presentation
-and job-focused profile building.
-</p>
-
-</div>
-
-
 
 <div class="skill-card skill-mint">
-
-<div class="icon">
-✍️
+<div class="icon">✍️</div>
+<h3>Content Writing</h3>
+<p>Writing ideas, digital content and professional communication.</p>
 </div>
-
-<h3>
-Content Writing
-</h3>
-
-<p>
-Writing ideas, digital content
-and professional communication.
-</p>
-
-</div>
-
-
 
 <div class="skill-card skill-dark">
-
-<div class="icon">
-🎨
+<div class="icon">🎨</div>
+<h3>Designing</h3>
+<p>Creative thinking, visual communication and digital design.</p>
 </div>
-
-<h3>
-Designing
-</h3>
-
-<p>
-Creative thinking,
-visual communication and digital design.
-</p>
-
-</div>
-
-
 
 <div class="skill-card skill-green">
-
-<div class="icon">
-🤖
+<div class="icon">🤖</div>
+<h3>Prompt Writing</h3>
+<p>AI prompting, structured instructions and practical AI workflows.</p>
 </div>
-
-<h3>
-Prompt Writing
-</h3>
-
-<p>
-AI prompting, structured instructions
-and practical AI workflows.
-</p>
-
-</div>
-
-
 
 <div class="skill-card skill-teal">
-
-<div class="icon">
-💡
-</div>
-
-<h3>
-Ideas & Innovation
-</h3>
-
-<p>
-Creative thinking,
-problem identification and solution building.
-</p>
-
-</div>
-
-
+<div class="icon">💡</div>
+<h3>Ideas & Innovation</h3>
+<p>Creative thinking, problem identification and solution building.</p>
 </div>
 
 </div>
-
+</div>
 </section>
 
 
+<!-- REAL LIFE LEARNING -->
 
-<!-- ==================================================
-                  REAL LIFE LEARNING
-================================================== -->
-
-<section
-id="learning"
-class="soft">
+<section id="learning" class="soft">
 
 <div class="container">
 
-
 <div class="section-title">
 
-<div class="eyebrow">
+<div class="eyebrow">REAL-LIFE LEARNING</div>
 
-REAL-LIFE LEARNING
-
-</div>
-
-<h2>
-
-Learn Beyond Theory.
-
-</h2>
+<h2>Learn Beyond Theory.</h2>
 
 <p>
-
-Concepts become valuable
-when you know how to use them
-in real situations.
-
+Concepts become valuable when you know how to use them in real situations.
 </p>
 
 </div>
-
-
 
 <div class="grid">
 
+<div class="card">
+<div class="icon">📊</div>
+<h3>MS Excel Real-Life Problems</h3>
+<p>Learn Excel through practical business, office and data problems.</p>
+</div>
 
 <div class="card">
-
-<div class="icon">
-📊
+<div class="icon">🗄️</div>
+<h3>SQL Queries</h3>
+<p>Convert real-world data questions into useful SQL queries.</p>
 </div>
-
-<h3>
-MS Excel Real-Life Problems
-</h3>
-
-<p>
-Learn Excel through practical business,
-office and data problems.
-</p>
-
-</div>
-
-
 
 <div class="card">
-
-<div class="icon">
-🗄️
+<div class="icon">🔎</div>
+<h3>SEO Ranking</h3>
+<p>Understand search intent, content, keywords and search visibility.</p>
 </div>
-
-<h3>
-SQL Queries
-</h3>
-
-<p>
-Convert real-world data questions
-into useful SQL queries.
-</p>
-
-</div>
-
-
 
 <div class="card">
-
-<div class="icon">
-🔎
+<div class="icon">🧮</div>
+<h3>Aptitude Solving</h3>
+<p>Improve speed, accuracy and problem-solving methods.</p>
 </div>
-
-<h3>
-SEO Ranking
-</h3>
-
-<p>
-Understand search intent,
-content, keywords and visibility.
-</p>
-
-</div>
-
-
 
 <div class="card">
-
-<div class="icon">
-🧮
+<div class="icon">🧠</div>
+<h3>Reasoning Cracked</h3>
+<p>Build logical patterns and systematic approaches.</p>
 </div>
-
-<h3>
-Aptitude Solving
-</h3>
-
-<p>
-Improve speed, accuracy
-and problem-solving methods.
-</p>
-
-</div>
-
-
 
 <div class="card">
-
-<div class="icon">
-🧠
+<div class="icon">🏫</div>
+<h3>School Software</h3>
+<p>Explore digital solutions for students, teachers, parents and schools.</p>
 </div>
-
-<h3>
-Reasoning Cracked
-</h3>
-
-<p>
-Build logical patterns
-and systematic approaches.
-</p>
-
-</div>
-
-
 
 <div class="card">
-
-<div class="icon">
-🏫
+<div class="icon">🏪</div>
+<h3>Business Software</h3>
+<p>Practical digital solutions for small businesses.</p>
 </div>
-
-<h3>
-School Software
-</h3>
-
-<p>
-Explore digital solutions
-for students, teachers,
-parents and schools.
-</p>
-
-</div>
-
-
 
 <div class="card">
-
-<div class="icon">
-🏪
+<div class="icon">🚀</div>
+<h3>Project-Based Learning</h3>
+<p>Turn knowledge into practical projects that solve genuine problems.</p>
 </div>
-
-<h3>
-Business Software
-</h3>
-
-<p>
-Practical digital solutions
-for small businesses.
-</p>
-
-</div>
-
-
 
 <div class="card">
-
-<div class="icon">
-🚀
-</div>
-
-<h3>
-Project-Based Learning
-</h3>
-
-<p>
-Turn knowledge into practical
-projects that solve genuine problems.
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<div class="icon">
-💼
-</div>
-
-<h3>
-Career Preparation
-</h3>
-
-<p>
-Connect skills with resumes,
-interviews and career direction.
-</p>
-
-</div>
-
-
+<div class="icon">💼</div>
+<h3>Career Preparation</h3>
+<p>Connect skills with resumes, interviews and career direction.</p>
 </div>
 
 </div>
-
+</div>
 </section>
 
 
-
-<!-- ==================================================
-                         QUOTE
-================================================== -->
+<!-- QUOTE -->
 
 <section class="cream">
 
 <div class="container">
 
-
 <div class="quote-box">
 
 <h2>
-
-"Knowledge becomes powerful
-when you apply it."
-
+“Knowledge becomes powerful when you apply it.”
 </h2>
 
 <p>
-
-Don't learn a skill only to say
-that you know it.
-
-Learn it.
-Practice it.
-Use it.
-Improve it.
-
+Don't learn a skill only to say that you know it.
+Learn it. Practice it. Use it. Improve it.
 Then teach someone else.
-
 </p>
 
 </div>
-
 </div>
-
 </section>
 
 
-
-<!-- ==================================================
-                     CAREER ROADMAPS
-================================================== -->
+<!-- ROADMAPS -->
 
 <section id="roadmaps">
 
 <div class="container">
 
-
 <div class="section-title">
 
-<div class="eyebrow">
+<div class="eyebrow">CAREER DIRECTION</div>
 
-CAREER DIRECTION
-
-</div>
-
-<h2>
-
-Career Roadmaps
-
-</h2>
+<h2>Career Roadmaps</h2>
 
 <p>
-
 A roadmap gives learning a direction.
-
 </p>
 
 </div>
-
-
 
 <div class="roadmap">
 
-
 <div class="roadmap-card">
 
-<div class="icon">
-💻
-</div>
+<div class="icon">💻</div>
 
-<h3>
-Software / IT Path
-</h3>
+<h3>Software / IT Path</h3>
 
 <ul>
-
-<li>
-Computer Basics
-</li>
-
-<li>
-Programming Fundamentals
-</li>
-
-<li>
-Python / C / C++
-</li>
-
-<li>
-DSA
-</li>
-
-<li>
-Projects
-</li>
-
-<li>
-Interview Preparation
-</li>
-
+<li>Computer Basics</li>
+<li>Programming Fundamentals</li>
+<li>Python / C / C++</li>
+<li>DSA</li>
+<li>Projects</li>
+<li>Interview Preparation</li>
 </ul>
 
 </div>
 
-
-
 <div class="roadmap-card">
 
-<div class="icon">
-📊
-</div>
+<div class="icon">📊</div>
 
-<h3>
-Data Analytics Path
-</h3>
+<h3>Data Analytics Path</h3>
 
 <ul>
-
-<li>
-Excel
-</li>
-
-<li>
-SQL
-</li>
-
-<li>
-Data Cleaning
-</li>
-
-<li>
-Data Visualization
-</li>
-
-<li>
-Analytics Projects
-</li>
-
-<li>
-Portfolio Building
-</li>
-
+<li>Excel</li>
+<li>SQL</li>
+<li>Data Cleaning</li>
+<li>Data Visualization</li>
+<li>Analytics Projects</li>
+<li>Portfolio Building</li>
 </ul>
 
 </div>
 
-
-
 <div class="roadmap-card">
 
-<div class="icon">
-📈
-</div>
+<div class="icon">📈</div>
 
-<h3>
-Digital / SEO Path
-</h3>
+<h3>Digital / SEO Path</h3>
 
 <ul>
-
-<li>
-Digital Basics
-</li>
-
-<li>
-Content Writing
-</li>
-
-<li>
-SEO Fundamentals
-</li>
-
-<li>
-Keyword Research
-</li>
-
-<li>
-Content Strategy
-</li>
-
-<li>
-Portfolio
-</li>
-
+<li>Digital Basics</li>
+<li>Content Writing</li>
+<li>SEO Fundamentals</li>
+<li>Keyword Research</li>
+<li>Content Strategy</li>
+<li>Portfolio</li>
 </ul>
 
 </div>
 
-
-
 <div class="roadmap-card">
 
-<div class="icon">
-💼
-</div>
+<div class="icon">💼</div>
 
-<h3>
-Job Seeker Path
-</h3>
+<h3>Job Seeker Path</h3>
 
 <ul>
-
-<li>
-Skill Assessment
-</li>
-
-<li>
-Resume Preparation
-</li>
-
-<li>
-Job Search
-</li>
-
-<li>
-Interview Practice
-</li>
-
-<li>
-HR Questions
-</li>
-
-<li>
-Career Clarity
-</li>
-
+<li>Skill Assessment</li>
+<li>Resume Preparation</li>
+<li>Job Search</li>
+<li>Interview Practice</li>
+<li>HR Questions</li>
+<li>Career Clarity</li>
 </ul>
 
 </div>
 
-
-
 <div class="roadmap-card">
 
-<div class="icon">
-🏫
-</div>
+<div class="icon">🏫</div>
 
-<h3>
-Education Technology Path
-</h3>
+<h3>Education Technology Path</h3>
 
 <ul>
-
-<li>
-School Requirements
-</li>
-
-<li>
-Student Data
-</li>
-
-<li>
-Teacher Workflows
-</li>
-
-<li>
-Parent Access
-</li>
-
-<li>
-Reports
-</li>
-
-<li>
-School Software
-</li>
-
+<li>School Requirements</li>
+<li>Student Data</li>
+<li>Teacher Workflows</li>
+<li>Parent Access</li>
+<li>Reports</li>
+<li>School Software</li>
 </ul>
 
 </div>
 
-
-
 <div class="roadmap-card">
 
-<div class="icon">
-🏪
-</div>
+<div class="icon">🏪</div>
 
-<h3>
-Small Business Digital Path
-</h3>
+<h3>Small Business Digital Path</h3>
 
 <ul>
-
-<li>
-Business Requirements
-</li>
-
-<li>
-Digital Presence
-</li>
-
-<li>
-Customer Management
-</li>
-
-<li>
-Marketing
-</li>
-
-<li>
-Business Software
-</li>
-
-<li>
-Growth Strategy
-</li>
-
+<li>Business Requirements</li>
+<li>Digital Presence</li>
+<li>Customer Management</li>
+<li>Marketing</li>
+<li>Business Software</li>
+<li>Growth Strategy</li>
 </ul>
 
 </div>
 
-
 </div>
-
 </div>
-
 </section>
 
 
+<!-- PROJECTS -->
 
-<!-- ==================================================
-                       PROJECTS
-================================================== -->
-
-<section
-id="projects"
-class="soft">
+<section id="projects" class="soft">
 
 <div class="container">
 
-
 <div class="section-title">
 
-<div class="eyebrow">
+<div class="eyebrow">IDEAS INTO ACTION</div>
 
-IDEAS INTO ACTION
-
-</div>
-
-<h2>
-
-Projects & Software
-
-</h2>
+<h2>Projects & Software</h2>
 
 <p>
-
 Knowledge should create something useful.
-
 </p>
 
 </div>
-
-
 
 <div class="projects">
 
+<div class="project">
+<div class="icon">🏫</div>
+<h3>School Software</h3>
+<p>
+Digital support for schools, teachers,
+students, parents and academic management.
+</p>
+</div>
 
 <div class="project">
-
-<div class="icon">
-🏫
-</div>
-
-<h3>
-School Software
-</h3>
-
+<div class="icon">🏪</div>
+<h3>Business Software</h3>
 <p>
-Digital support for schools,
-teachers, students, parents
-and academic management.
+Practical digital solutions designed to
+support small businesses.
 </p>
-
 </div>
-
-
 
 <div class="project">
-
-<div class="icon">
-🏪
-</div>
-
-<h3>
-Business Software
-</h3>
-
+<div class="icon">💼</div>
+<h3>Job Seeker Support</h3>
 <p>
-Practical digital solutions
-designed to support
-small businesses.
+Career preparation, resume guidance,
+interview preparation and practical support.
 </p>
-
 </div>
-
-
 
 <div class="project">
-
-<div class="icon">
-💼
-</div>
-
-<h3>
-Job Seeker Support
-</h3>
-
+<div class="icon">💡</div>
+<h3>Innovation Projects</h3>
 <p>
-Career preparation,
-resume guidance,
-interview preparation
-and practical support.
+Ideas converted into practical concepts,
+prototypes and digital solutions.
 </p>
-
-</div>
-
-
-
-<div class="project">
-
-<div class="icon">
-💡
-</div>
-
-<h3>
-Innovation Projects
-</h3>
-
-<p>
-Ideas converted into practical
-concepts, prototypes
-and digital solutions.
-</p>
-
-</div>
-
-
 </div>
 
 </div>
-
+</div>
 </section>
 
 
-
-<!-- ==================================================
-                  1-1 SESSION
-================================================== -->
+<!-- 1-1 SESSION -->
 
 <section class="cream">
 
 <div class="container">
 
-
 <div class="quote-box">
 
-
 <div class="eyebrow">
-
 GNANA DEEPIKA 1-1
-
 </div>
 
-
 <h2>
-
 Career Clarity Session
-
 </h2>
 
-
 <p>
-
 For job seekers feeling stuck,
 overwhelmed or ready to level up.
-
 Get personalized guidance,
-career direction and practical
-next-step planning.
-
+career direction and practical next-step planning.
 </p>
-
 
 <div class="buttons">
 
@@ -2565,67 +1312,44 @@ class="btn btn-teal">
 
 </div>
 
-
 </div>
-
 </div>
-
 </section>
 
 
+<!-- CONTACT -->
 
-<!-- ==================================================
-                      CONTACT
-================================================== -->
-
-<section
-id="contact"
-class="contact">
+<section id="contact" class="contact">
 
 <div class="container">
 
-
 <div class="contact-box">
 
-
 <div class="eyebrow">
-
 CONNECT WITH GNANA DEEPIKA
-
 </div>
 
-
 <h2>
-
 Let's Learn & Grow Together.
-
 </h2>
 
-
 <p>
-
-Have a question, idea,
-learning requirement,
-career concern or collaboration
-opportunity?
-
+Have a question, idea, learning requirement,
+career concern or collaboration opportunity?
 Let's connect.
-
 </p>
 
-
 <div class="contact-buttons">
-
 
 <a
 href="https://wa.me/919059527699?text=Hello%20Shaik%20Sharif%2C%20I%20would%20like%20to%20connect%20with%20Gnana%20Deepika."
 target="_blank"
 class="btn btn-green">
 
-💬 WhatsApp
+💬 WhatsApp<br>
+9059527699
 
 </a>
-
 
 <a
 href="mailto:sharif.talentscout@gmail.com?subject=Gnana%20Deepika%20Enquiry"
@@ -2635,37 +1359,22 @@ class="btn btn-teal">
 
 </a>
 
-
 </div>
-
 
 <p style="margin-top:20px">
-
-9059527699
-
-<br>
-
 sharif.talentscout@gmail.com
-
 </p>
 
-
 </div>
-
 </div>
-
 </section>
 
 
-
-<!-- ==================================================
-                       FOOTER
-================================================== -->
+<!-- FOOTER -->
 
 <footer>
 
 <div class="container">
-
 
 <div class="footer-logo">
 
@@ -2675,40 +1384,23 @@ alt="Gnana Deepika Logo">
 
 </div>
 
-
-<strong>
-
-GNANA DEEPIKA
-
-</strong>
-
+<strong>GNANA DEEPIKA</strong>
 
 <small>
-
 Knowledge • Skills • Career • Growth
-
 </small>
-
 
 <br><br>
 
-
 <small>
-
 © 2026 Gnana Deepika — All Rights Reserved.
-
 <br>
-
 Designed by Shaik Sharif | SS CAREER HUB
-
 </small>
-
 
 </div>
 
 </footer>
 
-
 </body>
-
 </html>
